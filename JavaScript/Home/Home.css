@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "menulateral cabecalho"
+        "menulateral conteudoprincipal";
+    grid-template-columns: 190px auto;
+    grid-template-rows: auto 90vh;
+    gap: 1px;
+}
+
+.conteudoprincipal {
+    grid-area: conteudoprincipal;
+    align-items: center;
+}
+
+.menulateral {
+    justify-content: center;
+    display: flex;
+    grid-area: menulateral;
+}
+
+
+.item {
+    width: 189px;
+    height: 29px;
+    background-color: red;
+    color: black;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16.94px;
+    height: 60px;
+    border: solid 0px;
+    margin: 4px;
+}
+
+li {
+    margin: 1px;
+    padding: 0%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item:hover {
+    color: #262727;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.menulateral ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.menulateral nav {
+    background-color: black;
+}
+
